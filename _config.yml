@@ -18,7 +18,7 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "Jahnavi Ghelani"
-description: |
+description: |-
   Come, view this world through my lens. 
   You'll find words here on statistics, product analytics, 
   things that made me pause & think.
