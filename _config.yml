@@ -19,9 +19,9 @@ skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "Jahnavi Ghelani"
 description: |- 
-  Come, view this world through my lens. 
-  You'll find words here on statistics, product analytics, 
-  things that made me pause & think.
+  "Come, view this world through my lens. /n
+  You'll find words here on statistics, product analytics, /n
+  things that made me pause & think."
   
 baseurl: # the subpath of your site, e.g. "/blog"
 url: jahnavi12345.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
