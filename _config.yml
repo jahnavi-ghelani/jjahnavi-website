@@ -118,7 +118,7 @@ author:
   links: 
     - title: LinkedIn
       url: https://www.linkedin.com/in/jahnavigh/
-      icon: fa fa-linkedin-square
+      icon: fa-brands fa-linkedin-square
     - title: Medium
       url: https://medium.com/@explorerjj
       icon: fab fa-medium
@@ -130,7 +130,7 @@ author:
 footer_links:
   - title: LinkedIn
     url: https://www.linkedin.com/in/jahnavigh/
-    icon: fa fa-linkedin-square
+    icon: fa-brands fa-linkedin-square
   - title: Medium
     url: https://medium.com/@explorerjj
     icon: fab fa-medium
