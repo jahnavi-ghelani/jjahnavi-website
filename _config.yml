@@ -68,13 +68,13 @@ search_full_content: false # can have performance implications for large sites
 # tag_archive_path: "/tags/#"
 
 #Pages to include/exclude
-include: ["docs"]
-exclude: 
-   - Gemfile
-   - edge-case
-   - markup
-   - recipes
-   - theme-setup
+# include: ["docs"]
+# exclude: 
+#    - Gemfile
+#    - edge-case
+#    - markup
+#    - recipes
+#    - theme-setup
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
