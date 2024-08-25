@@ -4,15 +4,10 @@ title: "About Me"
 image: 
     path: /images/me-study-forest-wide.webp
     caption: "DALL-E’s attempt at recreating my study."
-last_modified_at: 2024-08-05
 ---
+Depending on the time of the day, I'm a
+### Data Scientist | Data Literacy Facilitator | Mentor | Life Coach in-training | Empath | Swimmer | just curious.
 
-<figure class="align-center">
-  <img src="{{ '/images/me-study-forest-wide.webp' | absolute_url }}" alt="">
-  <figcaption>DALL-E’s attempt at recreating my study.</figcaption>
-</figure> 
-
-hjshdihbndfsbhdsfuidf
-
-dsfijdshfisdufhisfhsd
-dshfuidshfisdufhi
+##### When not working, 
+I am either locked up in my largest wardrobe – the one with books, or getting creative – solving puzzles, cooking, travelling and conversing with friends across the globe. I have an affinity for languages, old wisdom, exploration, and learning. 
+Empath, swimmer, problem solver.
