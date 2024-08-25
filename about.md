@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # About Me
 <figure class="align-center">
   <img src="{{ '/images/me-study-forest-wide.webp' | absolute_url }}" alt="Working in my study.">
