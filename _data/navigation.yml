@@ -3,7 +3,7 @@
 - title: Home
   url: /
 - title: About
-  url: /about.md  
+  url: /docs/_pages/about.md  
 # - title: Posts
 #   url: /posts/
 - title: Categories
