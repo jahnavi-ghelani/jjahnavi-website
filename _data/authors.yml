@@ -1,16 +1,29 @@
-# Sample Authors
-# Remove file or replace with your own
+# Author
 
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
-  links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
+Jahnavi Ghelani:
+  name: Jahnavi Ghelani
+  # picture: /images/bio-photo-2.jpg
+  linkedIn: @jahnavigh
+  medium: @explorerjj
+  email: @jahnavighelani
+  links: 
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/jahnavigh/
+      icon: fa fa-linkedin-square
+    - title: Medium
+      url: https://medium.com/@explorerjj
+      icon: fa fa-medium
+    - title: E-mail
+      url: jahnavighelani@gmail.com
+      icon: fa fa-envelope
 
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+#   twitter: "@billyrick"
+#   links:
+#     - title: Twitter
+#       url: https://twitter.com/billyrick
+#       icon: fab fa-twitter-square
+
+# Cornelius Fiddlebone:
+#   name: Cornelius Fiddlebone
+#   picture: /images/bio-photo.jpg
+#   twitter: corneliusfiddlebone
