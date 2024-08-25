@@ -6,7 +6,7 @@ image:
     caption: "DALL-E’s attempt at recreating my study."
 ---
 **_Depending on the time of the day, I'm a_**
-### Data Scientist ° Data Literacy Facilitator ° Mentor . Life Coach in-training . Empath . Swimmer . Curious .
+### Data Scientist . Data Literacy Facilitator . Mentor . Life Coach in-training . Empath . Swimmer . Curious .
 
 **_When not working,_**
 
