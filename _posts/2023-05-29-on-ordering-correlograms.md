@@ -68,8 +68,7 @@ Do we try on every method and eyeball the results to pick the most interesting o
 
 ## Hierarchical Clustering (hclust)
 Simply put, hclust reorders a correlogram based on the distance between features. Closest features (least distance) are ordered side-by-side and far apart from more distant features.
-
->*Note: If you are studying correlation coefficients as a precursor to clustering, do not confuse this with the distance (or similarity) matrix calculated for observations. Here, we’re looking for similar features and the plot applies a simple hclust algorithm to hierarchically order said features.*
+>*Note: If you are studying correlation coefficients as a precursor to clustering, do not confuse this with the distance (or similarity) matrix calculated for observations. Here, we’re looking for similar features and the plot applies a simple hclust algorithm to hierarchically order said features.*  
 
 There are further ways to compute distance between features — `'ward'`, `'ward.D'`, `'ward.D2'`, `'single'`, `'complete'`, `'average'`, `'mcquitty'`, `'median'` or `'centroid'` — which is passed to the hclust.method argument in `corrplot`. For the sake of brevity, we won’t be discussing the different hclust distance measures. Suffices to say that each measure begins with the baseline that each feature is in its own cluster. Thereafter, it calculates pair-wise distance between the featues and the closest ones (least distance) are paired together. Then, once again, the distance is computed between all clusters (few independent features and few grouped in the first iteration) and, those with the least distance are grouped next. This continues till all features have been included in the hierarchy of clusters.
 
@@ -92,7 +91,6 @@ This hierarchy, of iteratively including features, is what is used to order the 
          diag = FALSE, #hide coefficient on the principal diagonal
     ) 
 ```
-
 >*Note: the above code will not auto-add dendograms to the correlogram. The below image is used to better differentiate the behind-the-scenes ordering process for hclust compared to FPC or AOE. You can use the R package heatmaply to add the dendograms to your correlogram.*
 
 ![Correlogram with dendogram - showing hierarchical clustering of features.]("/images/correlogram-with-dendogram.webp")
@@ -100,7 +98,6 @@ This hierarchy, of iteratively including features, is what is used to order the 
 **Limitations of the hclust method:**
 * **Representation of ties in hierarchical clustering is weak.** That is, say, a feature having the same distance from 2 others features will create a tie — and this tie is arbitrarily broken by hierarchical clustering. This may result in arbitrary ordering of tied features.
 * **Even the most distant features will eventually be grouped into a hierarchical cluster.** Distance numbers by themselves have no meaning. It is only in comparison, that we use distance to say that two features are closer than others. Hence, depending on the level of hierarchical clustering (say, a threshold = 1.0) may not reveal a new order in the feature set.
-
 >**These limitations can be overcome by applying packages like `heatmaply` that remove the arbitrariness by visualizing the hierarchy next to the grid.**
 
 ## First Principal Component (FPC)
@@ -117,8 +114,7 @@ x<sub>1:p</sub> refer to p features in the dataset,
 a<sub>11:1p</sub> refer to coefficients derived from the covariance matrix.
 
 From the equation, we see FPC is a linear combination of the original features which account for the maximal amount of variance in the feature set. Hence, the higher the co-efficient (a<sub>1</sub>), the higher the contribution of a feature to the FPC. The ordering of features in the correlogram, thus, comes from the ordering of the co-efficients of features in FPC.
-
->*Note: If you are using the correlogram as a precursor to clustering, the FPC order will give you an early indication of the features that contribute most to PC1 from your model.*
+>*Note: If you are using the correlogram as a precursor to clustering, the FPC order will give you an early indication of the features that contribute most to PC1 from your model.*  
 
 **Hence, in addition to correlation coefficients, the FPC order indicates the features explaining the maximal variance in the model.** That is, the first feature contributes the most to the first principal component which, in turn, explains the most variance in the dataset. Conversely, the last feature contributes the least to explaining the variance in the dataset.
 
@@ -132,7 +128,6 @@ Therefore, we look to the angles formed by the first and second eigenvector e<su
 Mathematically, the order of the features is derived from the angles computed as so:
 
 ![]("/images/correlogram-aoe-equation.webp")
-<!-- {: .align-center} -->
 
 These angles sort the features into 2 major groups — those with positive correlations within, and those with negative correlations between, which makes it easier to visually consume the correlogram.
 
