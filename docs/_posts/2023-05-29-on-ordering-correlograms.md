@@ -14,9 +14,9 @@ tags:
   - R
   - visualization
 ---
-![A sample correlogram | source: R corrplot vignette]("/images/correlogram.webp")
-
 Correlograms are the usual go-to visualization for a correlation coefficient matrix. If your features set (set of variables in dataset) has only a few features, the human mind is able to eyeball the correlation co-efficients to glean the most important relationships. However, when the list of features is longer, eyeballing is time consuming and there are chances that we will miss out on a few unobvious but important details. As a rule of thumb, when the feature set contains more than 5 features, I prefer studying a corellogram rather than its correlation matrix for insights.
+
+![A sample correlogram. source: R corrplot vignette]("/images/correlogram.webp")
 
 A correlogram can be created in many ways, using many packages (both in R and Python), each offering varying levels of flexibility to configure the visualization. Here, I dive into the R package of [corrplot](https://cran.r-project.org/web/packages/corrplot/) but you can carry forward the same learnings to another correlogram-visualization function from other packages in R and Python.
 
@@ -96,10 +96,6 @@ This hierarchy, of iteratively including features, is what is used to order the 
 >*Note: the above code will not auto-add dendograms to the correlogram. The below image is used to better differentiate the behind-the-scenes ordering process for hclust compared to FPC or AOE. You can use the R package heatmaply to add the dendograms to your correlogram.*
 
 ![Correlogram with dendogram - showing hierarchical clustering of features.]("/images/correlogram-with-dendogram.webp")
-<!-- <figure class="align-center">
-  <img src="/images/correlogram-with-dendogram.webp" alt="">
-  <figcaption>Correlogram with dendogram - showing hierarchical clustering of features.</figcaption>
-</figure>  -->
 
 **Limitations of the hclust method:**
 * **Representation of ties in hierarchical clustering is weak.** That is, say, a feature having the same distance from 2 others features will create a tie — and this tie is arbitrarily broken by hierarchical clustering. This may result in arbitrary ordering of tied features.
@@ -141,10 +137,6 @@ Mathematically, the order of the features is derived from the angles computed as
 These angles sort the features into 2 major groups — those with positive correlations within, and those with negative correlations between, which makes it easier to visually consume the correlogram.
 
 ![Correlogram ordered by AOE]("/images/correlogram-ordered-by-aoe.webp")
-<!-- <figure class="align-center">
-  <img src="/images/correlogram-ordered-by-aoe.webp" alt="">
-  <figcaption>Correlogram ordered by AOE</figcaption>
-</figure> -->
 
 In summary, ordering of a correlogram is intended to help visually discern information from your feature set in addition to the correlation coefficients mapped in the central grid. When coupled with a smart ordering choice, the same correlogram can reveal multiple layers of information to better understand our feature set.
 
