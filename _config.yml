@@ -30,8 +30,8 @@ url: jahnavi12345.github.io # the base hostname & protocol for your site e.g. "h
 
 logo: "/images/site-logo.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
+read_time: true # reading time estimates, e.g. true
+words_per_minute: 200 # 200
 
 mathjax:
   enable: true # MathJax equations, e.g. true, false (default)
