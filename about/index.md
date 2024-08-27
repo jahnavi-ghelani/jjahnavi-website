@@ -5,6 +5,8 @@ image:
     path: /images/me-study-forest-wide.webp
     caption: "DALL-E’s attempt at recreating my study."
 ---
+Hi, I'm Jahnavi [pronunciation: Jaan-vi]
+
 **_Depending on the time of the day, I'm a_**
 ### Data Scientist . Data Literacy Facilitator . Mentor . Life Coach in-training . Empath . Swimmer . Curious .
 
