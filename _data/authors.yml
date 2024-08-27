@@ -10,9 +10,9 @@ Jahnavi Ghelani:
     - title: LinkedIn
       url: https://www.linkedin.com/in/jahnavigh/
       icon: fa-brands fa-linkedin-square
-    - title: Medium
-      url: https://medium.com/@explorerjj
-      icon: fab fa-medium
+    # - title: Medium
+    #   url: https://medium.com/@explorerjj
+    #   icon: fab fa-medium
     - title: E-mail
       url: jahnavighelani@gmail.com
       icon: fa fa-envelope

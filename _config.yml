@@ -60,8 +60,8 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 # Search
 search_full_content: false # can have performance implications for large sites
@@ -119,9 +119,9 @@ author:
     - title: LinkedIn
       url: https://www.linkedin.com/in/jahnavigh/
       icon: fa-brands fa-linkedin-square
-    - title: Medium
-      url: https://medium.com/@explorerjj
-      icon: fab fa-medium
+    # - title: Medium
+    #   url: https://medium.com/@explorerjj
+    #   icon: fab fa-medium
     - title: E-mail
       url: jahnavighelani@gmail.com
       icon: fa fa-envelope
