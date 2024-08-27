@@ -17,7 +17,7 @@ Correlograms are the usual go-to visualization for a correlation coefficient mat
 
 ![A sample correlogram. source: R corrplot vignette](/images/correlogram.webp)
 
-A correlogram can be created in many ways, using many packages (both in R and Python), each offering varying levels of flexibility to configure the visualization. Here, I dive into the R package of [corrplot](https://cran.r-project.org/web/packages/corrplot/) but you can carry forward the same learnings to another correlogram-visualization function from other packages in R and Python.
+A correlogram can be created in many ways, using many packages (both in R and Python), each offering varying levels of flexibility to configure the visualization. Here, I dive into the R package of [corrplot](https://cran.r-project.org/web/packages/corrplot/){:target="_blank"} but you can carry forward the same learnings to another correlogram-visualization function from other packages in R and Python.
 
 The basic steps followed in the creation of a correlogram include:
 * Computing a correlation matrix or, taking a matrix of pre-calculated coefficients as input.
@@ -139,6 +139,6 @@ This being said,
 **When in doubt, remember the purpose of the exercise: finding underlying patterns in the feature set.** Each ordering method is valid so long as it is helping uncover previously hidden information. Being critical of our chosen methods is a good skill for every data scientist. Here too, remain critical of the value derived from each ordering method and, if there is value addition by more than ordering style, leverage these.
 
 ## References
-* [Corrgrams: Exploratory displays for correlation matrices by Michael Friendly](https://www.datavis.ca/papers/corrgram.pdf)
-* [Correlation Heatmaps with Hierarchical Clustering](https://www.kaggle.com/code/sgalella/correlation-heatmaps-with-hierarchical-clustering)
-* [E#ect ordering for data displays by Michael Friendly, Ernest Kwan](https://www.datavis.ca/papers/effect/effect.pdf)
+* [Corrgrams: Exploratory displays for correlation matrices by Michael Friendly](https://www.datavis.ca/papers/corrgram.pdf){:target="_blank"}
+* [Correlation Heatmaps with Hierarchical Clustering](https://www.kaggle.com/code/sgalella/correlation-heatmaps-with-hierarchical-clustering){:target="_blank"}
+* [E#ect ordering for data displays by Michael Friendly, Ernest Kwan](https://www.datavis.ca/papers/effect/effect.pdf){:target="_blank"}
