@@ -5,13 +5,12 @@ subtitle: "Or correlation matrices."
 #   path: /images/correlogram.webp
 # #   thumbnail: /images/so-simple-sample-image-3-400x200.jpg
 #   caption: "A sample correlogram | source: R corrplot vignette"
-categories:
-  - statistics
 tags:
   - correlation
   - contains code
   - principal component analysis (pca)
   - R
+  - statistics
   - visualization
 ---
 Correlograms are the usual go-to visualization for a correlation coefficient matrix. If your features set (set of variables in dataset) has only a few features, the human mind is able to eyeball the correlation co-efficients to glean the most important relationships. However, when the list of features is longer, eyeballing is time consuming and there are chances that we will miss out on a few unobvious but important details. As a rule of thumb, when the feature set contains more than 5 features, I prefer studying a corellogram rather than its correlation matrix for insights.
