@@ -23,4 +23,4 @@ Econometrics became my stepping stone to move to quantitative market research (c
 
 Now a days, I more often cross-apply my statistical & mathematical skills to micro-organization problems than to macro-economic ones.
 
-[^imf]: IMF - International Monetary Fund explains Econometrics [here]("https://www.imf.org/external/pubs/ft/fandd/2011/12/basics.htm").
+[^imf]: IMF - International Monetary Fund explains Econometrics [here]("https://www.imf.org/external/pubs/ft/fandd/2011/12/basics.html").
