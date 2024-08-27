@@ -10,7 +10,7 @@ tags:
 
 *The Leadership Book Club, at R&D Mx, is sometimes hosted by motivated colleagues, sometimes by me. It is a great space to meet coworkers that I wouldn’t usually bump into. This time, we picked a book that takes us back to the basics (and, in doing so, invites many aspiring leaders) while promising to take us beyond the theory of most other leadership books: ‘Becoming a Technical Leader’ by Gerald M. Weinberg.*
 
-If you are looking for a copy and don’t mind an eBook, I recommend ordering [via Leanpub](https://leanpub.com/becomingatechnicalleader), for author payment transparency.
+If you are looking for a copy and don’t mind an eBook, I recommend ordering [via Leanpub](https://leanpub.com/becomingatechnicalleader){:target="_blank"}, for author payment transparency.
 
 ---
 
