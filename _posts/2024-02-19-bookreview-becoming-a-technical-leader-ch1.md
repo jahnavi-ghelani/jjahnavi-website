@@ -1,7 +1,8 @@
 ---
 title: "Book Review: Becoming a Technical Leader, Ch 1"
-tags:
+category:
   - book review
+tags:
   - leadership
   - philosophy
   - made-me-introspect

@@ -5,8 +5,8 @@ subtitle: "Or correlation matrices."
 #   path: /images/correlogram.webp
 # #   thumbnail: /images/so-simple-sample-image-3-400x200.jpg
 #   caption: "A sample correlogram | source: R corrplot vignette"
-# categories:
-#   - Post
+categories:
+  - statistics
 tags:
   - correlation
   - contains code
