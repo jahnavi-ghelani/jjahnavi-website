@@ -7,7 +7,7 @@ title: On the Visibility of Deep Thinkers
 tags:
   - quotes
 ---
-![](/images/quote-adamgrant.png)  
+![](/images/quote-adamgrant-smaller.png)  
 By [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"}
 
 As I agreed a 100%, I wondered why it is so.  
