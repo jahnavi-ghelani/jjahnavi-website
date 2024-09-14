@@ -6,13 +6,13 @@ tags:
   - reminders
 ---
 
-<h1><i><p>"Confidence is a choice, not a symptom. The batter has already hit two home runs. When he gets up to bat for the third time, his confidence is running high...  </p>
+<h2><i><p>"Confidence is a choice, not a symptom. The batter has already hit two home runs. When he gets up to bat for the third time, his confidence is running high...  </p>
 
 <p>It's easy to feel confident when we're on a roll, when the cards are going our way, or we're closing sales right and left. This symptomatic confidence, one built on a recent series of successes, isn't particularly difficult to accomplish or useful.</p>
 
 <p>Effective confidence comes from within, it's not the result of external events. The confident salesperson is likely to close more sales. The confident violinist expresses more of the music. The confident leader points us to the places we want (and need) to go.</p>
 
-<p>You succeed because you've chosen to be confident. It's not really useful to require yourself to be successful before you're able to become confident."</p></i></h1>
+<p>You succeed because you've chosen to be confident. It's not really useful to require yourself to be successful before you're able to become confident."</p></i></h2>
 
 [Seth Godin](https://seths.blog/2014/03/confidence-is-a-choice-not-a-symptom/){:target="_blank"}
 

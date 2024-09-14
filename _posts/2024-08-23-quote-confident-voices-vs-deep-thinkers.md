@@ -13,7 +13,7 @@ tags:
 By [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"} -->
 <h1><i>"We pay too much attention to the most confident voices - and too little attention to the most thoughtful ones.  
 Certainty is not a sign of credibility. Speaking assertively is not a substitute for thinking deeply.  
-It's better to learn from complex thinkers than smooth talkers."</h1> 
+It's better to learn from complex thinkers than smooth talkers."</i></h1> 
 
 [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"}
 
