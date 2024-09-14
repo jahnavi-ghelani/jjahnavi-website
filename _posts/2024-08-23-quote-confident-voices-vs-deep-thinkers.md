@@ -1,12 +1,13 @@
 ---
 title: On the Visibility of Deep Thinkers
-# image: 
-#   path: /images/quote-adamgrant.png
-#   thumbnail: /images/quote-adamgrant.png
-#   caption: "Source: [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"}"
 tags:
   - quotes
 ---
+<!-- image: 
+  path: /images/quote-adamgrant.png
+  thumbnail: /images/quote-adamgrant.png
+  caption: "Source: [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"}" -->
+
 <!-- ![](/images/quote-adamgrant-smaller.png)
 
 By [Adam Grant](https://www.instagram.com/p/C-77dqlpeyU/?igsh=Z3FzdTBuczljaGpi){:target="_blank"} -->
