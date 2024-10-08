@@ -3,7 +3,7 @@ title: Confidence is a Choice
 tags:
   - quotes
   - confidence
-  - reminders
+  - things-to-remember
 ---
 
 > *"Confidence is a choice, not a symptom. The batter has already hit two home runs. When he gets up to bat for the third time, his confidence is running high...*
