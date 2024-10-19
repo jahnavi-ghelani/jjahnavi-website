@@ -4,7 +4,8 @@ tags:
   - leadership
   - questions-to-come-back-to
 ---
-> While searching for the answer, I realized the **TTGM framework**. A mnemonic to remember it is **Time To Gain Mastery**. TTGM stands for **Teach** - **Trust** - **Set Goals** - **Mentor**.  
+While searching for the answer, I realized the **TTGM framework**. TTGM stands for **Teach** - **Trust** - **Set Goals** - **Mentor**.  A mnemonic to remember it is **Time To Gain Mastery**.  
+---  
 
 Honing & keeping technical skills sharp require time - time to learn & practice the hard skills. Practicing often involves working on complex, intensive projects. How then, might you make time available for also leading people?  
 
