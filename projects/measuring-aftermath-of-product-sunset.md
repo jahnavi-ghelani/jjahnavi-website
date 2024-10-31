@@ -5,11 +5,7 @@ image:
   path: /images/analytics-to-decisions.webp
   thumbnail: /images/analytics-to-decisions.webp
   caption: "A representation by DALL-E"
-# tags:
-#   - product analytics
-#   - statistics
-#   - projects
-# collection: projects
+collection: projects
 taxonomy: articles
 ---
 Experiments are a great way to measure what will change. To measure what has changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, that is, we need to conduct counterfactual analyses.  
