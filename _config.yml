@@ -135,6 +135,6 @@ footer_links:
   - title: E-mail
     url: jahnavighelani@gmail.com
     icon: fa fa-envelope
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+  # - title: Feed
+  #   url: atom.xml
+  #   icon: fas fa-rss-square
