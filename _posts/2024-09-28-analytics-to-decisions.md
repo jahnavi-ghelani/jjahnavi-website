@@ -44,4 +44,4 @@ Being data enabled is not about having dashboards displayed on big screens. Dash
 *This article is inspired by [Gartner's question: 'Decisions: Can Data & Analytics make them better?'](https://www.gartner.com/en/articles/highlights-from-gartner-data-analytics-summit-2024){:target="_blank"}*
 
 ### References
-[^dikw] The Data-Information-Knowledge-Wisdom (DIKW) Pyramid is [explained here by Datacamp](https://campus.datacamp.com/courses/introduction-to-data-literacy/data-literacy-basics?ex=5){:target="_blank"} in their free data literacy course.
+[^dikw]: The Data-Information-Knowledge-Wisdom (DIKW) Pyramid is [explained here by Datacamp](https://campus.datacamp.com/courses/introduction-to-data-literacy/data-literacy-basics?ex=5){:target="_blank"} in their free data literacy course.
