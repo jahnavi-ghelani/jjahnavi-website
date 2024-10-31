@@ -1,10 +1,10 @@
 ---
 title: "Measuring the Aftermath of a Product Sunset"
 # subtitle: "Generalized from application at Research & Development department, Mendix, Siemens."
-# # image: 
-# #   path: /images/analytics-to-decisions.webp
-# #   # thumbnail: /images/so-simple-sample-image-3-400x200.jpg
-# #   caption: "A representation by DALL-E"
+image: 
+  path: /images/analytics-to-decisions.webp
+  thumbnail: /images/analytics-to-decisions.webp
+  caption: "A representation by DALL-E"
 # tags:
 #   - product analytics
 #   - statistics
