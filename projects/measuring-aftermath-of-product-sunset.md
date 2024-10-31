@@ -1,10 +1,12 @@
 ---
+layout: page
 title: "Measuring the Aftermath of a Product Sunset"
 # subtitle: "Generalized from application at Research & Development department, Mendix, Siemens."
 image: 
   path: /images/analytics-to-decisions.webp
   thumbnail: /images/analytics-to-decisions.webp
   caption: "A representation by DALL-E"
+collection: projects
 ---
 Experiments are a great way to measure what will change. To measure what has changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, that is, we need to conduct counterfactual analyses.  
 There are 2 approaches to apply counterfactual analysis for this scenario:  
