@@ -28,7 +28,6 @@ url: jahnavi12345.github.io # the base hostname & protocol for your site e.g. "h
 
 logo: "/images/site-logo.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %Y"
-# date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
 words_per_minute: 200 # 200
 
@@ -129,7 +128,7 @@ author:
 footer_links:
   - title: LinkedIn
     url: https://www.linkedin.com/in/jahnavigh/
-    icon: fa-brands fa-linkedin-square
+    icon: fa-brands fa-linkedin
   - title: Medium
     url: https://medium.com/@explorerjj
     icon: fab fa-medium
