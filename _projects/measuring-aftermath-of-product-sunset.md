@@ -37,36 +37,35 @@ Let's take the example of 3 features to characterize product usage in the pre an
 * Active users per month (MAU - a measure of user traffic), 
 * Median<sup>2</sup> active days per user month (a measure of engagement), 
 * Days to first (replacement) product activity (a measure of adoption of the product replacing the one being sunset). Here, we assume that the replacement product is an existing product, i.e., it has usage data in the pre-sunset period.  
+<sup>2</sup>*The choice of aggregate depends on the distribution of the cross-sectional metric. Most real-world adoption and engagement distributions tend to be heavily skewed and so, median is chosen here to represent the central tendency.*
 
 Let's take a look at the feature types: MAU is a time-series feature, active days/month is a pooled time-series feature and, days to first product activity is a cross-sectional feature (unaggregated).  
 
 &#128161; ***Pooled time-series data** is cross-sectional data aggregated per period to transform into time-series data. In approach 1, the treatment for time-series and pooled time-series features remain the same. The difference occurs in approach 2, when fitting a time-series model to predict future values.* 
-{: .notice--primary}
-
-<sup>2</sup>*The choice of aggregate depends on the distribution of the cross-sectional metric. Most real-world adoption and engagement distributions tend to be heavily skewed and so, median is chosen here to represent the central tendency.*
+{: .notice--info}
 
 <details open>
   <summary>Expand: Note on Sample Period</summary>
 
-  #### Sample Period  
+  <h3>Sample Period </h3>
   <br>
   Let's assume 6 months of data per feature, immediately pre and post product sunset, for fair comparison<sup>3</sup>. 
   <br> 
   When we want to stay as close as feasible (with respect to the sample size) to the change event, this risk can be mitigated by decomposing the time-series features to remove their seasonal component (here onwards referred to as de-seasonalizing).    
-  <br>
-  <sup>3</sup>*Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.* 
+  <br><br>
+  <sup>3</sup><b>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</b> 
 </details>
  
 Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testing for significant differences between O(pre) and O(post). 
 
 MAU            |  De-seasonalized MAU
 :-------------------------:|:-------------------------:
-![Image 1: Pre vs Post MAU](/images/measuring-aftermath-mau.png)  |  ![Image 2: Pre vs Post de-seasonalized MAU](/images/measuring-aftermath-mau-deseasonalized.png)
+![](/images/measuring-aftermath-mau.png)  |  ![](/images/measuring-aftermath-mau-deseasonalized.png)
 Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component. 
 
 <p float="left">
-  <img src="/images/measuring-aftermath-mau.png" width="50%" />
-  <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="50%" />
+  <img src="/images/measuring-aftermath-mau.png" width="100" />
+  <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="100" />
 </p>
 *Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.*
 
@@ -77,15 +76,15 @@ The next important decision is [choosing a suitable significance test](https://w
 
 **These steps can be reapplied for pooled time-series features with an optional change: segmenting each group (pre and post values) for deeper insights.** For example, we may want to compare engagement separately for new vs existing users. In this case, the split is made before de-seasonalizing the pooled time-series, akin to splitting our original feature into two new features and analyzing each independently.
 
-**The steps followed for the cross-sectional features builds on the steps for time-series and pooled time-series features, with the exception of the de-seasonalizing step.** The de-seasonalizing step may require further consideration depending on the nature of the chosen cross-sectional feature. 
+The steps followed for the cross-sectional features builds on the steps for time-series and pooled time-series features, with the exception of the de-seasonalizing step. **The de-seasonalizing step may require further consideration depending on the nature of the chosen cross-sectional feature.**   
 For example, values for duration-based features, like days to first activity, may exceed monthly bounds (a user can take 2 or 100 days within the sampling period). Here too, seasonality may play a role (a user may be slower during the Summer due to holidays or faster due to greater time availability) but this is deemed an indirect influence. Here, we have a trade-off to make between retaining information (comparing the full distribution) with the risk of indirect seasonality influence and, giving up information (aggregating cross-sectional data into pooled time-series data) to treat for seasonality. For such duration features, we may accept the risk of ignoring seasonal effect in favour of analyzing the full distribution.
 
 **While this trade-off cannot be avoided, its influence on the results can be minimized.** One way to do this is by leveraging domain (industry/product) knowledge to segment the feature into 2 or more components: newer components transformed into a time-series feature (which is de-seasonalized and treated as afore-explained) and the remaining components stays a cross-sectional feature. For example, if the sunset and replacement products are core offerings, we may see a high share of users performing the first product activity on their first day of interacting with our product ecosystem (i.e., median duration = 0). In this case, it may be beneficial to split our original feature, days to first activity on replacement product, into 2 new features: users with first activity on their first day (transformed into monthly counts over time, i.e., time-series data) and the rest of the distribution, i.e., where duration ≥ 1 day (remains as cross-sectional data). 
 
-**Note: depending on the project needs, cross-sectional features can always be converted into pooled time-series features by choosing an aggregation.** Partial conversion of cross-sectional data + de-seasonalizing choice depends on the feature context (like our reasoning for duration-based features) and the trade-off with information retention (analyzing a distribution vs an aggregate). The general recommendation is to always de-seasonalize any time-series data where feasible. 
-{: .notice--primary}
+**Note: Depending on the project needs, cross-sectional features can always be converted into pooled time-series features by choosing an aggregation.** Partial conversion of cross-sectional data + de-seasonalizing choice depends on the feature context (like our reasoning for duration-based features) and the trade-off with information retention (analyzing a distribution vs an aggregate). The general recommendation is to always de-seasonalize any time-series data where feasible. 
+{: .notice--info}
 
-This brings us to the end of approach 1. 
+<!-- This brings us to the end of approach 1.  -->
 
 <!-- ## Recommended Links
 * base resource on 2-sample comparison tests -->
