@@ -62,7 +62,8 @@ paginate: 10
 paginate_path: /page:num/
 
 # Search
-search_full_content: false # can have performance implications for large sites
+search_full_content: true # can have performance implications for large sites
+# Setting search_full_content to false (the default) restricts indexing to the first 50 words of body content.
 
 # Taxonomy pages
 # category_archive_path: "/categories/#"
