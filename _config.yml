@@ -110,13 +110,21 @@ defaults:
     values:
       layout: post
       share: true
+  # Project defaults
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: post
+      # comments: true
+      # share: true
 
 # Site Author
 author: 
   name: Jahnavi Ghelani
   picture:
   email: jahnavighelani@gmail.com
-  linkedIn: jahnavigh
+  linkedin: jahnavigh
   medium: explorerjj
   email: jahnavighelani
   links: 
