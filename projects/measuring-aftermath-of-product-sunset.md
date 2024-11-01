@@ -29,3 +29,10 @@ One may, for instance, discover that not only is there significant difference bu
 | Time <br>investment       | This approach is relatively quicker to execute and, can be an optional first step to approach 2, to get a feel of the underlying dataset & patterns. | Fitting a time series model to each feature*, especially, for a new dataset, is usually more time consuming. |
 
 **Here and onward, feature is used to mean variables/metrics in the data model (data science terminology), and not features of a product (product terminology).*
+
+## Measuring change vs conducting causal inference 
+Note that the title of this paper reads 'measuring the aftermath' and not 'measuring the impact'. The difference between the two is measuring change vs inferencing causality after product sunset. Let's understand this better.   
+Measuring impact involves establishing a causal relationship between product sunset (cause) and the measured aftermath (effect). It seeks to answer the question that if there are significant differences in user behavior post-sunset, how much change is a result of product sunset vs other changes (marketing campaigns, new learning resources, etc.) or externalities (economic situation, new competitors, etc.). Measuring the aftermath (characterizing the effect) is a necessary pre-cursor to performing causal inference.  
+Causal modelling is a fascinating heuristic technique that involves several analytics techniques. Perhaps, this is why it is referred to as a mix of art and science. Much research is being done in this relatively new area and much is yet to be standardized, unlike our age-old techniques that have been smoothened and deepened, to cover not only the generic use cases but also niche variants. As is the current state, causal modeling application deserves its own paper and is out of scope here.
+
+## Approach 1: Comparing observed data pre & post sunset
