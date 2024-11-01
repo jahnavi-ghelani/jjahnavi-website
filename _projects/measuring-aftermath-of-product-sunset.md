@@ -6,7 +6,7 @@ image:
   caption: "A representation by DALL-E"
 ---
 
-Experiments are a great way to measure what *will* change. To measure what *has* changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, that is, we need to conduct counterfactual analyses.  
+Experiments are a great way to measure what *will* change. To measure what *has* changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, i.e., we need to conduct counterfactual analyses.  
 
 There are 2 approaches to apply counterfactual analysis for this scenario:   
 *Notation: O(v) is observed values, E(v) is expected value.*
@@ -18,7 +18,7 @@ Here, E(v) are predicted to estimate a scenario where the sunset event never occ
 Both approaches have their advantages and disadvantages. 
 
 |                           | Approach 1: O(pre) vs O(post) | Approach 2: E(post) vs O(post) |
-|---------------------------|:-------------------------------:|:--------------------------------:|
+|---------------------------|-------------------------------|--------------------------------|
 | **Feature <br>selection**<sup>1</sup>    | **Feature-agnostic**: This method is suitable to be applied to a wide variety of metrics (or features) like, cross-sectional data (example: absolute count of active days per user), time-series data and pooled time series data (example: average or median active days across all users per month). | **Time-series and pooled time-series only**: Since this method involves predicting future values of a feature, this can only be done with time-series data or pooled time-series data (where a feature distribution is aggregated per time period).<br><br>Furthermore, since no aggregate (average, median, etc.) is single-handedly representative of the complete distribution, selecting this approach involves the risk of losing useful information. |
 | **Robustness <br>of results** | What this approach offers in breath of feature selection, it fails to offer in depth of robust findings.<br><br> This can be compensated for by manually segmenting the data based on expected differentiators and, running significance tests for each segment (in addition to the whole distribution).<br><br> However, the practicality of this is subject to the ease of proactively judging these segments from the dataset, and the increased risk of operating with confirmation bias. | This approach of counterfactual analysis offers more depth of information to characterize significant differences between expected and observed results along a spectrum, rather than a single data point like in approach 1. <br><br>One may, for instance, discover that not only is there significant difference but it occurs more in peak months of activity, compared to slump months of the product usage cycle. |
 | **Time <br>investment**       | This approach is relatively quicker to execute and, can be an optional first step to approach 2, to get a feel of the underlying dataset & patterns. | Fitting a time series model to each feature*, especially, for a new dataset, is usually more time consuming. |
@@ -37,6 +37,7 @@ Let's take the example of 3 features to characterize product usage in the pre an
 * Active users per month (MAU - a measure of user traffic), 
 * Median<sup>2</sup> active days per user month (a measure of engagement), 
 * Days to first (replacement) product activity (a measure of adoption of the product replacing the one being sunset). Here, we assume that the replacement product is an existing product, i.e., it has usage data in the pre-sunset period.  
+
 <sup>2</sup>*The choice of aggregate depends on the distribution of the cross-sectional metric. Most real-world adoption and engagement distributions tend to be heavily skewed and so, median is chosen here to represent the central tendency.*
 
 Let's take a look at the feature types: MAU is a time-series feature, active days/month is a pooled time-series feature and, days to first product activity is a cross-sectional feature (unaggregated).  
@@ -44,28 +45,22 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
 &#128161; ***Pooled time-series data** is cross-sectional data aggregated per period to transform into time-series data. In approach 1, the treatment for time-series and pooled time-series features remain the same. The difference occurs in approach 2, when fitting a time-series model to predict future values.* 
 {: .notice--info}
 
-<details open>
+<details>
   <summary>Expand: Note on Sample Period</summary>
 
   <h3>Sample Period </h3>
-  <br>
   Let's assume 6 months of data per feature, immediately pre and post product sunset, for fair comparison<sup>3</sup>. 
   <br> 
   When we want to stay as close as feasible (with respect to the sample size) to the change event, this risk can be mitigated by decomposing the time-series features to remove their seasonal component (here onwards referred to as de-seasonalizing).    
   <br><br>
-  <sup>3</sup><b>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</b> 
+  <sup>3</sup><i>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</i> 
 </details>
- 
+   
 Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testing for significant differences between O(pre) and O(post). 
 
-MAU            |  De-seasonalized MAU
-:-------------------------:|:-------------------------:
-![](/images/measuring-aftermath-mau.png)  |  ![](/images/measuring-aftermath-mau-deseasonalized.png)
-Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component. 
-
 <p float="left">
-  <img src="/images/measuring-aftermath-mau.png" width="100" />
-  <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="100" />
+  <img src="/images/measuring-aftermath-mau.png" width="450" />
+  <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="450" />
 </p>
 *Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.*
 
