@@ -58,10 +58,13 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
 <br>   
 Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testing for significant differences between O(pre) and O(post). 
 
-<p float="left">
+![Image 1: MAU](/images/measuring-aftermath-mau.png)
+![Image 2: De-seasonalized MAU](/images/measuring-aftermath-mau-deseasonalized.png)
+
+<!-- <p float="left">
   <img src="/images/measuring-aftermath-mau.png" width="350" />
   <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="350" />
-</p>
+</p> -->
 
 Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.
 {: .notice--info}
