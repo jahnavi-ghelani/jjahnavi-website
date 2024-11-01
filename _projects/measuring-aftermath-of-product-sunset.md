@@ -1,13 +1,11 @@
 ---
-layout: page
 title: "Measuring the Aftermath of a Product Sunset"
-# subtitle: "Generalized from application at Research & Development department, Mendix, Siemens."
 image: 
   path: /images/analytics-to-decisions.webp
   thumbnail: /images/analytics-to-decisions.webp
   caption: "A representation by DALL-E"
-# collection: projects
 ---
+
 Experiments are a great way to measure what will change. To measure what has changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, that is, we need to conduct counterfactual analyses.  
 There are 2 approaches to apply counterfactual analysis for this scenario:  
 *Notation: O(v) is observed values, E(v) is expected value.*
@@ -15,6 +13,12 @@ There are 2 approaches to apply counterfactual analysis for this scenario:
 This method is quicker but less robust.
 * Comparing expected value to observed values:  E(metrics post-sunset) vs O(metrics post-sunset). In shorthand, E(post) vs O(post).  
 Here, E(v) are predicted to estimate a scenario where the sunset event never occurred. But, since the sunset event did occur, the difference of the E(v) from the O(v) explains the change after product sunset. This method is relatively more time-consuming but is also more robust.  
+
+
+<!-- # subtitle: "Generalized from application at Research & Development department, Mendix, Siemens."
+# collection: projects
+# layout: page
+# category: projects -->
 
 Both approaches have their advantages and disadvantages. 
 
