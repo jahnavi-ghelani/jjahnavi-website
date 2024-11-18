@@ -59,7 +59,9 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
   <br><br>
   <sup>3</sup><i>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</i> 
 </details>
-<br>   
+<br>  
+
+### De-seasonalize time-series metrics
 Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testing for significant differences between O(pre) and O(post). 
 
 ![Image 1: MAU](/images/measuring-aftermath-mau.png)
@@ -70,9 +72,11 @@ Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testi
   <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="350" />
 </p> -->
 
+Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.
+{: .notice--info}
+
 ```r
 # code chunk for removing seasonality
-library(tstools) #generating random ts data
 
 # Sample data with seasonality
 dates <- seq(as.Date("2020-09-01"), by = "month", length.out = 36) #sample dates
@@ -97,12 +101,73 @@ df <- merge(df, deseasonalized.df,
             by = "month", all = FALSE) 
 ```
 
-Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.
-{: .notice--info}
-
+### Run Significance Test
 The next important decision is [choosing a suitable significance test](https://www.kdnuggets.com/wp-content/uploads/statisticaltesttree.png) to reject the null hypothesis of no change in the feature, that is, O(pre) = O(post). This decision depends on several factors like, data type (numerical vs categorical), number of groups to be compared (pre vs post = 2 groups), relationship between groups (paired vs non-paired), sensitivity requirement of the effect (detect small vs large changes), etc. Our example includes only numerical features. These are then checked for normality, usually proven false in real world datasets, and applies the non-parametric Mann-Whitney U test. Other tests to consider are KS (Kolmogorov–Smirnov) test, AD (Anderson-Darling) test. If there is a significant difference, we follow this by checking similarity of distribution (between the two groups), to correctly interpret the significance test results. In the density plot in image 2, we see that the distributions of the two groups of MAU are not similar and, hence, the change is interpreted in terms of mean rank difference. If the distributions were similar, we would interpret it in terms of the median. 
 
 ![Image 3: Density comparison](/images/measuring-aftermath-mau-density.png)
+
+```r
+# code chunk for running significance test + choosing the right interpretation
+library(ggplot2)
+
+#Continued from sample df created in previous code chunk
+#randomly assigning months to pre vs post sunset periods
+df$group <- c(rep("pre",18), rep("post",18)) 
+
+#checking normality--------------------------------------/
+#Alternative 1: Using a Q-Q plot
+ggplot(df, aes(sample = sample_metric_ds)) +
+  stat_qq() +
+  stat_qq_line(col = "goldenrod") +
+  theme_minimal() + theme(legend.position = "top") +
+  facet_wrap(~group) +
+  labs(title = "Normal Q-Q Plot", color = NULL)
+
+#Alternative 2: Using Shapiro-Wilk test
+shapiro.test(df$sample_metric_ds[df$group == "pre"])
+shapiro.test(df$sample_metric_ds[df$group == "post"])
+#note: the independent samples t-test is fairly robust to small deviations from normality.
+
+#choosing significance test------------------------------/
+# If the data is normally distributed & doesn't have outliers, use t-test. 
+# Else, use a suitable non-parametric test. 
+# Fro example, Mann Whitney U test:
+pre <- df$sample_metric_ds[df$group == "pre"]
+post <- df$sample_metric_ds[df$group == "post"]
+
+#!!!Significantly increased from pre to post change on 99% confidence interval.
+wilcox.test(pre, post, alternative = "less",
+            exact = TRUE,
+            correct = FALSE) #pre < post
+
+#choosing the right interpretation of test results--------/
+# comparing shape of data: 
+ggplot(df, aes(x = sample_metric_ds)) +
+  geom_density() +
+  facet_wrap(~group) +
+  labs(title = "Density plot")
+
+# If the shape is similar, the test results are interpreted in terms of the median. Else, the mean rank. 
+
+#calculating test stats for interpretation (wilcox.test() does not provide these automatically)
+mw_test_manual <- df[, c("sample_metric_ds", "group")] %>% 
+  mutate(R = rank(sample_metric_ds)) %>%
+  group_by(group) %>%
+  summarize(.groups = "drop", n = n(), R = sum(R)) %>%
+  pivot_wider(names_from = group, values_from = c(n, R)) %>%
+  mutate(
+    U_pre_change = `n_pre` * `n_post` + `n_pre`*(`n_pre` + 1)/2 - `R_pre`,
+    U_the_change = `n_pre` * `n_post` + `n_post`*(`n_post` + 1)/2 - `R_post`,
+    U = min(U_pre_change, U_the_change),
+    m_U = `n_pre` * `n_post` / 2,
+    s_U = sqrt((`n_pre` * `n_post` * (`n_pre` + `n_post` + 1)) / 12),
+    z = (U - m_U) / s_U,
+    mean_rank_pre_change = `R_pre` / `n_pre`,
+    mean_rank_the_change = `R_post` / `n_post`,
+  )
+view(mw_test_manual)
+
+```
 
 **These steps can be reapplied for pooled time-series features with an optional change: segmenting each group (pre and post values) for deeper insights.** For example, we may want to compare engagement separately for new vs existing users. In this case, the split is made before de-seasonalizing the pooled time-series, akin to splitting our original feature into two new features and analyzing each independently.
 
