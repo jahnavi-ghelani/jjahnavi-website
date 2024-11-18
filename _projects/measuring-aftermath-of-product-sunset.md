@@ -1,5 +1,7 @@
 ---
 title: "Measuring the Aftermath of a Product Sunset"
+# excerpt: ""
+excerpt_separator: "<!--more-->" 
 image: 
   path: /images/aftermath-of-product-sunset-banner.webp
   thumbnail: /images/aftermath-of-product-sunset-banner.webp
@@ -7,6 +9,8 @@ image:
 ---
 
 Experiments are a great way to measure what *will* change. To measure what *has* changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, i.e., we need to conduct counterfactual analyses.  
+
+<!--more-->
 
 There are 2 approaches to apply counterfactual analysis for this scenario:   
 *Notation: O(v) is observed values, E(v) is expected value.*
@@ -65,6 +69,33 @@ Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testi
   <img src="/images/measuring-aftermath-mau.png" width="350" />
   <img src="/images/measuring-aftermath-mau-deseasonalized.png" width="350" />
 </p> -->
+
+```r
+# code chunk for removing seasonality
+library(tstools) #generating random ts data
+
+# Sample data with seasonality
+dates <- seq(as.Date("2020-09-01"), by = "month", length.out = 36) #sample dates
+df <- as.data.frame(dates, col.names = "month") #dates added to data frame
+df$sample_metric <- runif(n = 36, min = 10000, max = 30000) #sample metric data
+
+#Create time series object
+timeseries_data <- ts(df$sample_metric[order(df$month)], 
+                      frequency = 12, 
+                      start = c(2022,1))
+
+#Decompose time series
+timeseries_decomposed <- stl(timeseries_data, s.window = "periodic")
+
+#Remove seasonal component
+timeseries_deseasonalized <- seasadj(timeseries_decomposed)
+
+#Add back de-seasonalized data to main df
+deseasonalized.df <- data.frame(sample_metric_ds = as.matrix(timeseries_deseasonalized),
+                                month = as.Date(time(timeseries_deseasonalized)))
+df <- merge(df, deseasonalized.df, 
+            by = "month", all = FALSE) 
+```
 
 Note: While sample period for pre and post comparison is 12 months (6 months each); for de-seasonalizing the time-series features, it is valuable to take as much historical data as available to aptly detect the seasonal component.
 {: .notice--info}
