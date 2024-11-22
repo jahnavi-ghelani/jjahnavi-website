@@ -1,5 +1,5 @@
 ---
-title: "Recommended Resources on Data Literacy"
+title: "On Data Literacy"
 # excerpt: ""
 excerpt_separator: "<!--more-->" 
 tags: 
@@ -9,16 +9,19 @@ tags:
     - data visualization
 ---
 
-Here, I've compiled a set of resources that I share with attendees of my Data Literacy workshops. Use these to level up your (and others) data literacy. And reach out to me here or here if you have recommendations.  
+Resources that I share with attendees of my Data Literacy workshops.   
 <!--more-->
+Use these to level up your (and others) data literacy. And reach out to me [here](https://www.linkedin.com/in/jahnavigh){:target="_blank"} or [here](mailto:jahnavighelani@gmail.com?){:target="_blank"} if you have more recommendations.
 
 {% include toc %}
 
 ## Free data literacy courses
+- [The Data Literacy Project](https://thedataliteracyproject.org/data-literacy-courses/) - They offer many free chapters from their data literacy curriculum.
+- [Introduction to Data Literacy](https://app.datacamp.com/learn/courses/introduction-to-data-literacy) by Datacamp - Self-guided data literacy 101.
 
-[![image-left]({{ '/images/data-literacy-project-logo.webp' | absolute_url }}){: .align-left}](https://thedataliteracyproject.org/data-literacy-courses/) They offer many free chapters from their data literacy curriculum.
+<!-- [![image-left]({{ '/images/data-literacy-project-logo.webp' | absolute_url }}){: .align-left}](https://thedataliteracyproject.org/data-literacy-courses/) They offer many free chapters from their data literacy curriculum.
 
-[![image-left]({{ '/images/datacamp-logo.webp' | absolute_url }}){: .align-right}](https://app.datacamp.com/learn/courses/introduction-to-data-literacy) Self-guided data literacy 101.
+[![image-left]({{ '/images/datacamp-logo.webp' | absolute_url }}){: .align-right}](https://app.datacamp.com/learn/courses/introduction-to-data-literacy) Self-guided data literacy 101. -->
 
 ## Statistics, simplified
 - [Small probabilities sdd, big ones don't](https://www.johndcook.com/blog/2024/05/10/small-probabilities-add/) by John D. Cook - A quick lesson on probability across independent trials.
