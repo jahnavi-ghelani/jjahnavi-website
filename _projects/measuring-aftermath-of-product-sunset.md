@@ -29,7 +29,7 @@ Both approaches have their advantages and disadvantages.
 
 <sup>1</sup>*Here and onward, feature is used to mean variables/metrics in the data model (data science terminology), and not features of a product (product terminology).*
 
-## Measuring change vs conducting causal inference 
+## Side note 1: Measuring change vs conducting causal inference 
 Note that the title of this paper reads 'measuring the aftermath' and not 'measuring the impact'. The difference between the two is measuring change vs inferencing causality after product sunset. Let's understand this better.   
 
 Measuring impact involves establishing a causal relationship between product sunset (cause) and the measured aftermath (effect). It seeks to answer the question that if there are significant differences in user behavior post-sunset, how much change is a result of product sunset vs other changes (marketing campaigns, new learning resources, etc.) or externalities (economic situation, new competitors, etc.). Measuring the aftermath (characterizing the effect) is a necessary pre-cursor to performing causal inference.  
@@ -49,7 +49,14 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
 &#128161; ***Pooled time-series data** is cross-sectional data aggregated per period to transform into time-series data. In approach 1, the treatment for time-series and pooled time-series features remain the same. The difference occurs in approach 2, when fitting a time-series model to predict future values.* 
 {: .notice--info}
 
-<details open>
+### Side note 2: Sample Period
+Let's assume 6 months of data per feature, immediately pre and post product sunset, for fair comparison<sup>3</sup>.  
+When we want to stay as close as feasible (with respect to the sample size) to the change event, this risk can be mitigated by decomposing the time-series features to remove their seasonal component (here onwards referred to as de-seasonalizing).  
+
+<sup>3</sup><i>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</i>   
+
+
+<!-- <details open>
   <summary>Expand: Note on Sample Period</summary>
 
   <h3>Sample Period </h3>
@@ -59,7 +66,7 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
   <br><br>
   <sup>3</sup><i>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</i> 
 </details>
-<br>  
+<br>   -->
 
 ### De-seasonalize time-series metrics
 Here, we transform the MAU into a de-seasonalized MAU (see image 1) before testing for significant differences between O(pre) and O(post). 
