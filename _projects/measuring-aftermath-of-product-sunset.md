@@ -50,11 +50,11 @@ Let's take a look at the feature types: MAU is a time-series feature, active day
 {: .notice--info}
 
 ### Side note 2: Sample Period
-Let's assume 6 months of data per feature, immediately pre and post product sunset, for fair comparison<sup>3</sup>.  
+Let's assume 6 months of data per feature, immediately pre and post product sunset, for fair comparison.  
+
+Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.   
+
 When we want to stay as close as feasible (with respect to the sample size) to the change event, this risk can be mitigated by decomposing the time-series features to remove their seasonal component (here onwards referred to as de-seasonalizing).  
-
-<sup>3</sup><i>Ideally, comparing annual data ensures a fairer comparison, i.e., lesser dependency on seasonality with respect to the months immediately pre and post sunset. However, since greater distance from the sunset event increases the risk of omitted influences (other explanatory variables not included in the feature set), this time horizon may not be acceptable to some use cases.</i>   
-
 
 <!-- <details open>
   <summary>Expand: Note on Sample Period</summary>
