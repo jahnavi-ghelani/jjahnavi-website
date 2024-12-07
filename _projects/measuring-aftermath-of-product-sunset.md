@@ -6,6 +6,12 @@ image:
   path: /images/aftermath-of-product-sunset-banner.webp
   thumbnail: /images/aftermath-of-product-sunset-banner.webp
   caption: "A representation by DALL-E"
+tags: 
+  - product analytics
+  - statistics
+  - counterfactual analysis
+  - significance test
+  - time series
 ---
 
 Experiments are a great way to measure what *will* change. To measure what *has* changed, (in absence of, or in addition to experiment results) we need a comparative analysis of the before vs after periods with respect to the sunset event, i.e., we need to conduct counterfactual analyses.  
