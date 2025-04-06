@@ -28,8 +28,8 @@ This needs collaboration:
 
   * **Disclose your expectations**: Get comfortable with sharing your estimate. When we ask a question, we usually have an estimate that we aren't yet certain about. Pencil this expected result - better yet, share it with your team.  
   It's okay if it turns out wrong. What is not okay is to lose the opportunity to learn from it. Our estimations are based on existing knowledge, information we consumed from different media, maybe some first or second-hand research. When the findings match the estimation, it validates our methods. When findings differ from estimations, it helps us learn why - perhaps, we missed a piece of the puzzle, perhaps there were too many variables. After all, the objective isn't to achieve accuracy (that's for our data teams).  
-  **The objective is to peg your estimation to 2 course of action: what you expect to do if your estimate is correct and if it isn't.**  
-  Rough is good. We don't need a strategy plan yet. We only elements to propel you into clear action.   
+  **The objective is to peg your estimation to 2 courses of action: what you expect to do if your estimate is correct and if it isn't.**  
+  Rough is good. We don't need a strategy plan yet. We only need a guide to propel you into clear action.   
   For example, when investigating the app langauge set by your users, let's say that you expect it to be English. If most users default to a non-English language, you may choose to investigate into the cost-benefit of offering a language switch option upfront before users dive into your app.
 
   * **Set targets/thresholds**: This is another way to ensure action. It borrows from the practice of estimating: **here, you are explictly estimating a future outcome** and pegging actions to 2 scenarios: achieving the target (you may choose to set a higher target next or keep it consistent), not achieving the target (you will begin investigating what needs to change). Target setting is another practice that only gets better the more we do it. 
