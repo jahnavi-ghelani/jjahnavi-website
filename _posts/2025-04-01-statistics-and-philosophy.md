@@ -38,4 +38,4 @@ Theory and practice must always inform each other for genuine progress.
 * **W𝗵𝗮𝘁 𝗮𝘀𝘀𝘂𝗺𝗽𝘁𝗶𝗼𝗻𝘀 𝗮𝗶𝗱 𝘃𝘀 𝗱𝗶𝘀𝘁𝗼𝗿𝘁 𝘁𝗵𝗲 𝗺𝗼𝗱𝗲𝗹?**  
 * **W𝗵𝗶𝗰𝗵 𝗱𝗼𝗼𝗿𝘀 (𝗮𝗹𝘁𝗲𝗿𝗻𝗮𝘁𝗶𝘃𝗲 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵𝗲𝘀) 𝗵𝗮𝘃𝗲 𝘆𝗼𝘂 𝗰𝗹𝗼𝘀𝗲𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗿𝗼𝗮𝗱 𝘁𝗼 𝘁𝗵𝗶𝘀 𝗼𝗻𝗲?**  
 
-And, if you like reading, pick a few books from this shelf for deeper exploration: https://lnkd.in/eH_j5ScG
+And, if you like reading, pick a few books from this [shelf](https://lnkd.in/eH_j5ScG) for deeper exploration.
