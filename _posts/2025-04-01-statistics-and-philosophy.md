@@ -8,9 +8,7 @@ tags:
   - statistics
   - philosophy
 ---
-I enjoy reading 𝘀𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀 𝗮𝗻𝗱 𝗽𝗵𝗶𝗹𝗼𝘀𝗼𝗽𝗵𝘆 but I hadn't seen these combined in a single book/paper until I came across Zoltan Varju's compilation: https://lnkd.in/eH_j5ScG  
-And I've been thoroughly enjoying it! <br>
-**𝗢𝗻𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗹𝗲𝘀𝘀 𝘁𝗮𝗹𝗸𝗲𝗱 𝗮𝗯𝗼𝘂𝘁 𝘁𝗿𝗮𝗶𝘁𝘀 𝗼𝗳 𝗮𝗻 𝗮𝗱𝗲𝗽𝘁 𝘀𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝗶𝗮𝗻 (𝗼𝗿 𝗮𝗻𝗮𝗹𝘆𝘀𝘁 s𝗰𝗶𝗲𝗻𝘁𝗶𝘀𝘁) 𝗶𝘀 𝗴𝗼𝗼𝗱 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻 𝗺𝗮𝗸𝗶𝗻𝗴 𝘀𝗸𝗶𝗹𝗹𝘀.** 
+I enjoy reading 𝘀𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀 𝗮𝗻𝗱 𝗽𝗵𝗶𝗹𝗼𝘀𝗼𝗽𝗵𝘆 but I hadn't seen these combined in a single book/paper until I came across [Zoltan Varju's compilation](https://lnkd.in/eH_j5ScG). And I've been thoroughly enjoying it! **𝗢𝗻𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗹𝗲𝘀𝘀 𝘁𝗮𝗹𝗸𝗲𝗱 𝗮𝗯𝗼𝘂𝘁 𝘁𝗿𝗮𝗶𝘁𝘀 𝗼𝗳 𝗮𝗻 𝗮𝗱𝗲𝗽𝘁 𝘀𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝗶𝗮𝗻 (𝗼𝗿 𝗮𝗻𝗮𝗹𝘆𝘀𝘁 s𝗰𝗶𝗲𝗻𝘁𝗶𝘀𝘁) 𝗶𝘀 𝗴𝗼𝗼𝗱 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻 𝗺𝗮𝗸𝗶𝗻𝗴 𝘀𝗸𝗶𝗹𝗹𝘀.** 
 
 The road to conclusions is paved with innumerable decisions. To list a few: 
 * 🔍 selecting the analysis approach
@@ -39,5 +37,5 @@ Theory and practice must always inform each other for genuine progress.
 * **H𝗼𝘄 𝗱𝗼 𝘆𝗼𝘂𝗿 𝗰𝗵𝗼𝗶𝗰𝗲𝘀 𝗶𝗺𝗽𝗮𝗰𝘁 𝘁𝗵𝗲 𝗳𝗶𝗻𝗱𝗶𝗻𝗴𝘀?**   
 * **W𝗵𝗮𝘁 𝗮𝘀𝘀𝘂𝗺𝗽𝘁𝗶𝗼𝗻𝘀 𝗮𝗶𝗱 𝘃𝘀 𝗱𝗶𝘀𝘁𝗼𝗿𝘁 𝘁𝗵𝗲 𝗺𝗼𝗱𝗲𝗹?**  
 * **W𝗵𝗶𝗰𝗵 𝗱𝗼𝗼𝗿𝘀 (𝗮𝗹𝘁𝗲𝗿𝗻𝗮𝘁𝗶𝘃𝗲 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵𝗲𝘀) 𝗵𝗮𝘃𝗲 𝘆𝗼𝘂 𝗰𝗹𝗼𝘀𝗲𝗱 𝗼𝗻 𝘁𝗵𝗲 𝗿𝗼𝗮𝗱 𝘁𝗼 𝘁𝗵𝗶𝘀 𝗼𝗻𝗲?**  
- 
+
 And, if you like reading, pick a few books from this shelf for deeper exploration: https://lnkd.in/eH_j5ScG
