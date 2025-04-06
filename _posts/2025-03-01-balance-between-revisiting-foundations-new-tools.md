@@ -20,4 +20,4 @@ If you've wondered how to see-saw the two sides without falling off, here are so
 
 ⚖️ My workplace has 2 crafting days, each month, dedicated to learning & exploring with pet projects.
 
-⚖️ I love puzzles & solving these in a new tool is a fun way to stay tool-agnostic. I enjoy [Advent of Code] (https://adventofcode.com/).
+⚖️ I love puzzles & solving these in a new tool is a fun way to stay tool-agnostic. I enjoy [Advent of Code](https://adventofcode.com/).
