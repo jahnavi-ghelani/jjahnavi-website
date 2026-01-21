@@ -1,5 +1,5 @@
 ---
-title: "Chance of Being Struck by Lightning"
+title: "The Chance of Being Struck by Lightning"
 tags:
   - statistical paradox
   - data science
