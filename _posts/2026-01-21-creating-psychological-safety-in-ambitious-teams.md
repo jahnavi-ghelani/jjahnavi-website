@@ -1,9 +1,5 @@
 ---
 title: "Creating Psychological Safety Within Ambitious Teams"
-image: 
-  path: /images/stats-philosophy.png
-  # thumbnail: /images/so-simple-sample-image-3-400x200.jpg
-  caption: "The connected worlds of Statistics & Philosophy"
 tags:
   - psychological safety
   - leadership
