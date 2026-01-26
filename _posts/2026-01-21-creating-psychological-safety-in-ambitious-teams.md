@@ -1,11 +1,11 @@
 ---
 title: "Creating Psychological Safety Within Ambitious Teams"
-image: 
-  path: /images/psych-safety-handout.png
 tags:
   - psychological safety
   - leadership
 ---
+![](/images/psych-safety-handout.png)
+
 As a leading data scientist, while mentoring analysts and non-analysts, I often saw bright minds hesitate to ask questions on concepts they felt they “should” know - what they felt might be “stupid questions”. Especially, in fields like data science, where technical complexity, rapid evolution and high competition make people hesitant to reveal knowledge gaps. 
 
 However, as anybody with teaching experience will tell you, there is no such thing as a stupid question (provided people are being sincere) and often such brave questions help others in the room. People with teaching experience will also tell you that employing bravery in asking questions is a rare but contagious trait. Hear someone ask an “obvious” question, and it becomes slightly easier for others to follow. And, lastly, people with teaching experience will add that you cannot rely on this bravery alone to weed out hesitation from your entire audience.
