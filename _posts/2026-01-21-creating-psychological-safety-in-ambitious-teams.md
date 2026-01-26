@@ -1,5 +1,7 @@
 ---
 title: "Creating Psychological Safety Within Ambitious Teams"
+image: 
+  path: /images/psych-safety-handout.png
 tags:
   - psychological safety
   - leadership
