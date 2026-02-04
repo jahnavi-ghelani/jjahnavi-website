@@ -88,7 +88,7 @@ Creating psychological safety is your groundwork. Maintaining it is a shared tea
 
 > Ultimately, psychological safety isn’t about downplaying *true* competence. It is about building an environment that enables *everyone* in your team to take risks, sharpen their competencies, voice opinions, share knowledge without the fear of negative consequences. 
 
-If you must take away only 3 insights, let it be these: 
+If you must take away only three insights, let it be these: 
 * Psychological safety is created by redirecting competitive energy from individual status protection towards hands-on problem-solving. Address any form of competence peacocking (display without substance) and build accountability within your team.
 * No one shoe fits all. Try a few methods of building & maintaining psychological safety and involve your team in the feedback + improvement cycle.
 * Psychological safety is like a muscle that needs regular exercise. Periodically reassess & refine your strategies to safeguard this safety.
