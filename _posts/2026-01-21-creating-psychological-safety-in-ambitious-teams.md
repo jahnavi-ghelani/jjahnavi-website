@@ -86,7 +86,7 @@ Proactively asking your team is the best way to learn about their psychological 
 Creating psychological safety is your groundwork. Maintaining it is a shared team responsibility, including yours. When someone responds dismissively to a question, address it directly (and privately, if necessary). Conversely, recognize people who are particularly good moderators – good at making space for questions, who make complex topics accessible, who invite alternative view points.
 
 
-> *Ultimately, psychological safety isn’t about downplaying *true* competence. It is about building an environment that enables *everyone* in your team to take risks, sharpen their competencies, voice opinions, share knowledge without the fear of negative consequences.* 
+> Ultimately, psychological safety isn’t about downplaying *true* competence. It is about building an environment that enables *everyone* in your team to take risks, sharpen their competencies, voice opinions, share knowledge without the fear of negative consequences. 
 
 If you must take away only 3 insights, let it be these: 
 * Psychological safety is created by redirecting competitive energy from individual status protection towards hands-on problem-solving. Address any form of competence peacocking (display without substance) and build accountability within your team.
