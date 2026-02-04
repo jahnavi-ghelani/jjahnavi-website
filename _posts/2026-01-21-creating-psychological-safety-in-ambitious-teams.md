@@ -3,6 +3,7 @@ title: "Creating Psychological Safety Within Ambitious Teams"
 tags:
   - psychological safety
   - leadership
+  - team culture
 ---
 While leading ambitious data teams, and mentoring non-data professionals in data literacy, I have often seen bright minds hesitate to ask questions on topics they felt they “should” know - what they feel might be “stupid questions”. 
 
