@@ -1,5 +1,5 @@
 ---
-title: "What has been Brewing in the Tech World?"
+title: "What has been brewing in the tech world?"
 tags:
   - tech literacy
   - news with commentary
